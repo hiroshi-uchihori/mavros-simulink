@@ -1,0 +1,14 @@
+MAVROSを介して、MATLAB/SimulinkからPixhawk上のArdupilotを操作するサンプルプログラムです。
+
+MATLABのバージョンは2024bで、SimulinkとROS Toolboxが必要です。
+また、MAVROSはカスタムメッセージを用いているので、MATLABでこのメッセージを使うためカスタムメッセージの作成が必要です。
+次を参照してカスタムメッセージの作成をしてください。
+
+https://jp.mathworks.com/help/ros/ref/ros2genmsg.html
+
+必要なメッセージはmavros_msgsとgeographic_msgsの２つです。mavrosが正しくインストールされていると、/opt/ros/humble/shareの中にソースファイルがあるので、ここから適当なディレクトリにコピーして、MATLABのros2genmsgにそのディレクトリを渡して実行してください
+
+
+
+
+
